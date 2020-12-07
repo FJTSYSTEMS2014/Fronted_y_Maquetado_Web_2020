@@ -1,4 +1,84 @@
 body {
-    background-color: #84cedf;
-    text-align: left;
+    background-color: #1cbfe4;
+    
+   
+}
+
+
+* {
+    font-family:  serif;
+    font-size: 16px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+   
+    font-weight: normal;
+}
+
+
+#nav ul li a {
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+
+p {
+    text-align: justify;
+    line-height: 2em
+}
+
+.posts article, #footer section  {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #CCCCCC;
+   
+}
+
+#footer section form textarea:hover {
+    
+    cursor: pointer;
+    background-color: #00ff48;
+  }
+  #footer section form input:hover {
+    
+    cursor: pointer;
+    background-color: #00ff48;
+  }
+
+
+  #nav {
+    position: fixed;
+    top: 0;
+    width:100%;  
+   
+ }
+ #nav li {
+   padding: 10px;
+   display: inline; 
+   background-color:rgb(255, 255, 255); 
+   filter:alpha(opacity=50); 
+   opacity:0.6;
+ }
+
+ 
+ .posts article {
+
+    width:48.5vw;
+    display: inline-flex;
+   
+}
+
+.posts article {
+    border-spacing: 0px;
+    padding: 0%;
+   
+}
+
+
+ #footer section form {
+    width: 48.5vw;
+     display: inline-block;
+     position: center;
+  
 }
