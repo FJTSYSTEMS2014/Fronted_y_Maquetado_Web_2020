@@ -1,84 +1,82 @@
-body {
-    background-color: #1cbfe4;
-    
-   
-}
-
-
 * {
-    font-family:  serif;
+    font-family: serif;
     font-size: 16px;
 }
 
+body {
+    background-color: #1cbfe4;
+}
 
-h1,h2,h3,h4,h5,h6 {
-   
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-
 #nav ul li a {
-    text-decoration:none;
+    text-decoration: none;
     text-transform: uppercase;
 }
-
 
 p {
     text-align: justify;
     line-height: 2em
 }
 
-.posts article, #footer section  {
+.posts article, #footer section:first-child {
     border-style: dotted;
     border-width: 2px;
     border-color: #CCCCCC;
-   
 }
 
-#footer section form textarea:hover {
-    
+#footer section form textarea:hover, #footer section form textarea:focus {
     cursor: pointer;
     background-color: #00ff48;
-  }
-  #footer section form input:hover {
-    
+}
+
+#footer section form input:hover, #footer section form input:focus {
     cursor: pointer;
     background-color: #00ff48;
-  }
+}
 
-
-  #nav {
+#nav {
     position: fixed;
     top: 0;
-    width:100%;  
-   
- }
- #nav li {
-   padding: 10px;
-   display: inline; 
-   background-color:rgb(255, 255, 255); 
-   filter:alpha(opacity=50); 
-   opacity:0.6;
- }
+    width: 100%;
+}
 
- 
- .posts article {
+/*#nav li {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    filter: alpha(opacity=50);
+    opacity: 0.6;
+}
+*/
 
-    width:48.5vw;
-    display: inline-flex;
-   
+#nav ul li {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .posts article {
-    border-spacing: 0px;
-    padding: 0%;
-   
+    padding: 1vw;
+    width: 49vw;
+    display: inline-flex;
 }
 
+.posts article {
+    box-sizing: border-box;
+    /* El valor border-box en el box-sizing hace que el padding y
+     el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+}
 
- #footer section form {
-    width: 48.5vw;
-     display: inline-block;
-     position: center;
-  
+form {
+    background-color: rgba(245, 209, 224, 0.5);
+    display: flex;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
