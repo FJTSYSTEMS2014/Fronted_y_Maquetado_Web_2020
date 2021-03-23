@@ -1,4 +1,78 @@
+* {
+    font-family: serif;
+    font-size: 16px;
+}
+
 body {
-    background-color: #84cedf;
-    text-align: left;
+    background-color: #1cbfe4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    line-height: 2em
+}
+
+.posts article, #footer section:first-child {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #CCCCCC;
+}
+
+#footer section form textarea:hover, #footer section form textarea:focus {
+    cursor: pointer;
+    background-color: #00ff48;
+}
+
+#footer section form input:hover, #footer section form input:focus {
+    cursor: pointer;
+    background-color: #00ff48;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav ul li {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    /*La propiedad CSS flex es una propiedad resumida que indica la capacidad 
+  de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. 
+  Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional 
+  a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento.*/
+    /*La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una 
+  misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad 
+  también te permite controlar la dirección en la cual serán apilados los elementos. */
+}
+
+.posts article {
+    width: 50%;
+    flex: 50%;
+    padding: 0 1vw;
+    box-sizing: border-box;
+    /* El valor border-box en el box-sizing hace que el padding y
+     el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+}
+
+form {
+    background-color: rgba(245, 209, 224, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
