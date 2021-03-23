@@ -43,28 +43,28 @@ p {
     width: 100%;
 }
 
-/*#nav li {
-    padding: 10px;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    filter: alpha(opacity=50);
-    opacity: 0.6;
-}
-*/
-
 #nav ul li {
     padding: 10px;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.posts article {
-    padding: 1vw;
-    width: 49vw;
-    display: inline-flex;
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    /*La propiedad CSS flex es una propiedad resumida que indica la capacidad 
+  de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. 
+  Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional 
+  a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento.*/
+    /*La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una 
+  misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad 
+  también te permite controlar la dirección en la cual serán apilados los elementos. */
 }
 
 .posts article {
+    width: 50%;
+    flex: 50%;
+    padding: 0 1vw;
     box-sizing: border-box;
     /* El valor border-box en el box-sizing hace que el padding y
      el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
@@ -72,11 +72,7 @@ p {
 
 form {
     background-color: rgba(245, 209, 224, 0.5);
-    display: flex;
-    vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    justify-content: center;
-    align-items: center;
 }
